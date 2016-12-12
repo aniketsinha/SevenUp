@@ -1,0 +1,61 @@
+<!doctype html>
+<html
+    <head>
+        <title>SevenUp!</title>
+        <link rel="stylesheet" type="text/css" href="styles/style.css">
+    </head>
+    <body>
+        <div id="top">
+
+            <table class="scoreboard">
+                <thead>
+                <tr>
+                    <th>Total Matches Played</th>
+                    <th>Total Won</th>
+                    <th>Total Lost</th>
+                    <th>7Up count</th>
+                    <th>7 count</th>
+                    <th>7Down count</th>
+                </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td id="total_matches">0</td>
+                        <td id="total_won">0</td>
+                        <td id="total_lost">0</td>
+                        <td><span id="successful_up_count">0</span>/<span id="up_count">0</span></td>
+                        <td><span id="successful_seven_count">0</span>/<span id="seven_count">0</span></td>
+                        <td><span id="successful_down_count">0</span>/<span id="down_count">0</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="dices" class="dices">
+            <div id="dice1" class="dice_outline">
+                Dice 1
+                <div id="dice1_img"></div>
+            </div>
+            <div id="plus_sign" class="plus_sign">+</div>
+            <div id="dice2" class="dice_outline">
+                Dice 2
+                <div id="dice2_img"></div>
+            </div>
+            <div id="equals_sign" class="plus_sign">=</div>
+            <div id="dice_sum" class="dice_sum">
+                <div id="sum_result" class="sum_result"></div>
+                <div id="text_result" class="text_result"></div>
+            </div>
+        </div>
+
+        <div id="controls" class="controls">
+            <br>
+            <button class="bet_btn" id="btn_seven_up" name="Up" onclick="checkIf('Up')">SevenUp!</button>
+            <br>
+            <button class="bet_btn" id="btn_seven" name="Seven" onclick="checkIf('Seven')">Seven!</button>
+            <br>
+            <button class="bet_btn" id="btn_seven_down" name="Down" onclick="checkIf('Down')">SevenDown!</button>
+        </div>
+    
+        <script type="text/javascript" src="scripts/app.js"></script>
+    </body>
+</html>
